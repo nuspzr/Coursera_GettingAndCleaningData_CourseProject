@@ -135,6 +135,8 @@ We replace column 2 “activity” with descriptive labels.
 We remove all “-“ and “()” in the variable names.  And we switch “mean” to “Mean”, and “std” to “StdDev”.
 We also remove duplicates (“BodyBody” is changed to “Body”).
 
+From column 3 and on, if the variable's initial is "t", it is a time measurement; if the variable's initial is "f", it is a frequency measurement.
+
 The new variable names are:
 - subject
 - activity
