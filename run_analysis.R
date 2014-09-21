@@ -5,15 +5,15 @@ setwd("UCI HAR Dataset/")
 ###Merge all data into one list
 
 #Read and merge train data sets
-x_train<-read.table("x_train.txt")
-y_train<-read.table("y_train.txt")
-subject_train<-read.table("subject_train.txt")
+x_train<-read.table("train/X_train.txt")
+y_train<-read.table("train/Y_train.txt")
+subject_train<-read.table("train/subject_train.txt")
 mergedTrain<-cbind(subject_train,y_train,x_train)
 
 #Read test data sets
-x_test<-read.table("x_test.txt")
-y_test<-read.table("y_test.txt")
-subject_test<-read.table("subject_test.txt")
+x_test<-read.table("test/X_test.txt")
+y_test<-read.table("test/Y_test.txt")
+subject_test<-read.table("test/subject_test.txt")
 mergedTest<-cbind(subject_test,y_test,x_test)
 
 #Merge two lists into one
