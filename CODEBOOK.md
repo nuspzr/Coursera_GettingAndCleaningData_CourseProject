@@ -1,6 +1,6 @@
-CODEBOOK
+#CODEBOOK
 
-########Raw Data Set Information########
+#Raw Data Set Information
 
 The data are extracted from: .
 
@@ -8,13 +8,13 @@ The data are extracted from: .
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.”
 
-#######Output###########
+#Output
 
 The end output is a tidy data set that contains mean and standard deviation measurements of features by subject and activity.
 
-#######Data Processing#########
+#Data Processing
 
-#STEP 1: merge the data set.
+##STEP 1: merge the data set.
 
 - “x_train.txt”: all measurements of subjects in the train group
 - “y_train.txt”: activities conducted for each observation in the train group
@@ -28,7 +28,7 @@ We merge the three data sets above to get one list of all observations from the 
 
 We then joint the two newly created data sets into one master list named “merged”.
 
-#STEP 2: select mean and standard deviation measurements of all features.
+##STEP 2: select mean and standard deviation measurements of all features.
 
 - “features.txt”: the names of all measurements applied to each observation
 We use “features.txt” to name the columns of all observations. Note that this starts from column 3, as column 1 represents subject ID and column 2 represents activity type.
@@ -120,7 +120,7 @@ The new data set is named “mergedSelect” that contains variables below:
 - fBodyBodyGyroJerkMag-std()
 - fBodyBodyGyroJerkMag-meanFreq()
 
-#STEP 3: adding descriptive activity labels.
+##STEP 3: adding descriptive activity labels.
 
 We replace column 2 “activity” with descriptive labels.
 - “1”: WALKING
@@ -130,7 +130,7 @@ We replace column 2 “activity” with descriptive labels.
 - “5”: “STANDING”
 - “6”: “LAYING”
 
-#STEP 4: clean the variable names
+##STEP 4: clean the variable names
 
 We remove all “-“ and “()” in the variable names.  And we switch “mean” to “Mean”, and “std” to “StdDev”.
 We also remove duplicates (“BodyBody” is changed to “Body”).
@@ -218,5 +218,5 @@ The new variable names are:
 - fBodyGyroJerkMagStdDev
 - fBodyGyroJerkMagMeanFreq
 
-#STEP 5: write a table with mean on all selected measurements by subject and activity
+##STEP 5: write a table with mean on all selected measurements by subject and activity
 The table is written in “tidyOutput.txt”
