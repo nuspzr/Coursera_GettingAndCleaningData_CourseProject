@@ -21,7 +21,7 @@ Script ("run_analysis.R") does the following:
 
 
 
-About the final output ("tidyOutput.txt")
+About the final output ("tidyOutput.txt"):
 
 1. "tidyOutput.txt" is generated from Step 5 of the script "run_analysis.R".
 
