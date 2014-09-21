@@ -1,6 +1,7 @@
 #set working directory
 setwd("UCI HAR Dataset/")
 
+
 ###Step 1
 ###Merge all data into one list
 
