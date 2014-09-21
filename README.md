@@ -4,7 +4,6 @@ This repository stores the script, the codebook, and final output for the course
 
 
 About the raw data:
-
 The data are extracted from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 
@@ -21,11 +20,13 @@ Script ("run_analysis.R") does the following:
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
+
 About the final output ("tidyOutput.txt")
 
 1. "tidyOutput.txt" is generated from Step 5 of the script "run_analysis.R".
 
 2. Each row of the table stores the mean and the standard deviation measurement of various features (by each subject and each type of activity) from the raw data set, . 
+
 
 
 For more about variables and variable transformations, please refer to the codebook.md.
